@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante Trindade</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+<center>
+<section id="team" class="section-padding bg-gray">
+  <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Restaurante Trindade</h2>
+        <img src="{{ pratos.imagem.thumb.url}}" alt="{{ pratos.nome }}"/>
+          </div>
+          <div class="contetn">
+            <div class="info-text">
+              <h3><a href="#">{{ pratos.nome }}</a></h3>
+            </div>
+          </div>
+        </div>
+</section>
+</center>
+</body>
+</html>
